@@ -1,0 +1,88 @@
+/* -------  Base Element Styles */
+* {
+    box-sizing: border-box;
+    border: solid red;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(102, 100, 100);
+    
+}
+
+img {
+   max-width: 100%;
+ 
+}
+
+h1 {
+ 
+ margin: 0;
+}
+
+li {
+    list-style: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline;
+  
+} 
+
+h2 {
+    text-transform: uppercase;
+ 
+}
+
+main-header {
+    background: lightgrey;
+}
+
+
+
+/* Pseudo Links */
+a { text-decoration: none;
+}
+
+a:hover {
+    text-decoration: blue;
+}
+
+ }
+
+/* ----------- Floats----------*/
+
+
+
+
+/* ----------- Clear Floats----------*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+ /* ----------- Media Queries----------*/
+
+ @media (min-width: 1024px) {
+     h1,
+     .main-nav,
+     .main-nav li { 
+    display: inline;
+     }
+     li {
+       padding: 10px;
+       list-style-type: none;
+       float: right;
+     }
+     img {
+         width: 30%;
+     }
+ }
+}
+ @media (min-width: 768px){
+
+ }
+ @media (min-width:320px) {
+
+ }
