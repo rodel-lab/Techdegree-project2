@@ -1,88 +1,195 @@
-/* -------  Base Element Styles */
+/* ============ Base Element Styles =========== */
 * {
     box-sizing: border-box;
-    border: solid red;
+    
 }
 body{
-    font-family: 'Rubik', sans-serif;
-    color: rgb(102, 100, 100);
-    
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(48, 46, 46);
+    margin: 4%;
+    background-color: rgb(184, 240, 240)
 }
 
 img {
    max-width: 100%;
- 
-}
-
-h1 {
- 
- margin: 0;
 }
 
 li {
     list-style: none;
     font-weight: 600;
     text-transform: uppercase;
-    display: inline;
-  
+    display: inline; 
 } 
 
 h2 {
     text-transform: uppercase;
- 
+    text-align: center;
+    font-style: oblique;
+    color: rgb(30, 127, 156);
 }
 
 main-header {
     background: lightgrey;
 }
 
+p {
+    line-height: 1.4;
+    font-size: larger;
+}
+.skills-list li {
+  display: inline;
+  background: rgb(236, 168, 65);
+  padding: 10px;
+  border-radius: 10px;
 
+}
 
-/* Pseudo Links */
+/* =======Pseudo Links ==========*/
+
 a { text-decoration: none;
 }
 
 a:hover {
-    text-decoration: blue;
+    text-decoration: rgb(73, 73, 165);
+}
+/* =======Layout Styles========= */
+   
+  h1 {
+  padding-bottom: 2%;
+  margin-right: auto;
+  }
+  h1,
+  .main-nav {
+  margin-bottom: 30px;
+ }
+  .main-nav li {
+  padding-right: 15px;
+ }
+ .bottom-nav li {
+  padding-top: 20px;
+  padding-right: 15px;
+  list-style-type: none;
+  }
+  .portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+ }
+  .portfolio-content div {
+  text-align: center;
+  padding: 10px;
+ }
+ .contact-info {
+    text-align: center;
+    margin: auto;
+
+  }
+.skills-wrap {
+  text-align: center;
+  margin: 8%;
+  display: inline-block;
+} 
+.skills-list li {
+  padding: 15px; 
 }
 
+.footer-name {
+  float: left;
+  margin: auto;
+  font-size: 3.3vh;  
+}
+
+ /* ========================================*/
+ /*           Media Queries                 */
+ /* ======================================= */
+ @media (min-width: 320px) and (max-width: 767px){
+  .bottom-nav {
+    display: none;
+  }
+  .main-nav li {
+    display: block;
+    padding-bottom: 20px;
+  }
+  h1, .main-nav li {
+    text-align: center;
+  }
+  .name-top {
+   text-align: center;
+  }
+  .skills-wrap {
+    text-align: center;
+    margin: auto;
+    display:block;
+  }
+}
+ @media (min-width: 768px){
+  .to-top {
+  display: none;
+  }  
+.main-nav  {
+margin-top: 0;
+}
+h1,
+.main-nav,
+.main-nav li { 
+display: inline;
+  
+}
+.main-nav {
+float: right
+}    
+
+.self-image {
+float: right;
+margin: auto;
+margin-bottom: 5%;
  }
+ .intro {
+  float: left;
+  width: 40%;
+  text-align: left;
+ }
+   
+.portfolio-content div {
+  width: 50%
+ }
+.bottom-nav li {
+  float: left;
+} 
+.bottom-nav{
+  float: right;
+ } 
+ .footer-name {
+  float: left;
+  margin: 15px;
+ }                         
+}
 
-/* ----------- Floats----------*/
+ @media (min-width: 1024px) {
+  h1 {
+  float: left;  
+  text-align: left; 
+  }
+  .main-nav {
+  text-align: right;
+  } 
+  .main-nav {
+  float: right
+  }
+  .main-nav li {
+  padding: 10px;
+  margin-right: 20px;
+  list-style-type: none;
+  float: left;
+ }
+  .portfolio-content div {
+  width: 33%
+  
+   }
+} 
+/* ==============  Clear Floats =============*/
 
-
-
-
-/* ----------- Clear Floats----------*/
-.clearfix::after {
+.clearfix::after { 
     content: "";
     display: table;
     clear: both;
   }
-  
-
-
- /* ----------- Media Queries----------*/
-
- @media (min-width: 1024px) {
-     h1,
-     .main-nav,
-     .main-nav li { 
-    display: inline;
-     }
-     li {
-       padding: 10px;
-       list-style-type: none;
-       float: right;
-     }
-     img {
-         width: 30%;
-     }
- }
-}
- @media (min-width: 768px){
-
- }
- @media (min-width:320px) {
-
- }
